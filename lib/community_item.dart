@@ -5,7 +5,7 @@ class CommunityItemPage extends StatelessWidget {
 
   CommunityItemPage({this.image});
 
-  String image;
+  final String image;
 
   Widget build(BuildContext ctz) {
     return Scaffold(
