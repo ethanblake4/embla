@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "476652956485",
+    "firebase_url": "https://embla-889b2.firebaseio.com",
+    "project_id": "embla-889b2",
+    "storage_bucket": "embla-889b2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:476652956485:android:ebde43ec12bc64df",
+        "android_client_info": {
+          "package_name": "com.embla"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "476652956485-2l54prjf5ifdtrkl4ng84se5fpgdpvnl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.embla",
+            "certificate_hash": "323748bf276531cc05712f45c995ddfd966d9040"
+          }
+        },
+        {
+          "client_id": "476652956485-jlungfrh381lishoa51a57sbt788tk8j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXEggEcGYWf7IcddydmjPVH9cR0L_cgIQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "476652956485-jlungfrh381lishoa51a57sbt788tk8j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
