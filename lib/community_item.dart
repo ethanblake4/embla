@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:flutter_parallax/flutter_parallax.dart';
 
 class CommunityItemPage extends StatelessWidget {
 
@@ -9,10 +10,10 @@ class CommunityItemPage extends StatelessWidget {
 
   Widget build(BuildContext ctz) {
     return Scaffold(
-      body: Hero(
+      body: ListView(children: [Parallax.inside(child: Hero(
         tag: image,
-        child: CachedNetworkImage(imageUrl: image),
-      ),
+        child: CachedNetworkImage(imageUrl: image)), mainAxisExtent: 200.0, direction: AxisDirection.down,)
+      ])
     );
   }
 }

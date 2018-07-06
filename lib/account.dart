@@ -5,6 +5,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'community_item.dart';
 import 'widget/star_rating.dart';
 
+
 class AccountPage extends StatefulWidget {
   _AccountPageState createState() => _AccountPageState();
 }
