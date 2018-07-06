@@ -71,6 +71,8 @@ fastlane/readme.md
 .packages
 .pub/
 
-build/
-
 .flutter-plugins
+.idea/vcs.xml
+ios/Frameworks/
+test/
+untitled folder/
