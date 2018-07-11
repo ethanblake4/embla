@@ -33,7 +33,7 @@ class EmblaApp extends StatelessWidget {
     900: const Color(0xFF0984E3),
   });
 
-  final MaterialColor green = MaterialColor(0xFF6CEA9B, const <int, Color> {
+  /*final MaterialColor green = MaterialColor(0xFF6CEA9B, const <int, Color> {
     50:  const Color(0xFFE2FBEB),
     100: const Color(0xFFC4F7D7),
     200: const Color(0xFFA7F2C3),
@@ -44,7 +44,38 @@ class EmblaApp extends StatelessWidget {
     700: const Color(0xFF36754E),
     800: const Color(0xFF275C36),
     900: const Color(0xFF1B3A27),
+  });*/
+
+  final MaterialColor purple = MaterialColor(0xFF271BC1, const <int, Color> {
+    50:  const Color(0xFFD8DDFF),
+    100: const Color(0xFFD8DDFF),
+    200: const Color(0xFFD8DDFF),
+    300: const Color(0xFF4C43CE),
+    400: const Color(0xFF4C43CE),
+    500: const Color(0xFF4C43CE),
+    600: const Color(0xFF4C43CE),
+    700: const Color(0xFF271BC1),
+    800: const Color(0xFF271BC1),
+    900: const Color(0xFF271BC1),
   });
+
+  final MaterialColor yellow = MaterialColor(0xFFFFC918, const <int, Color> {
+    50:  const Color(0xFFFFC918),
+    100: const Color(0xFFFFC918),
+    200: const Color(0xFFFFC918),
+    300: const Color(0xFFFFC918),
+    400: const Color(0xFFFFC918),
+    500: const Color(0xFFFFC918),
+    600: const Color(0xFFFFC918),
+    700: const Color(0xFFFFC918),
+    800: const Color(0xFFFFC918),
+    900: const Color(0xFFFFC918),
+  });
+
+  final Color purpleColorLight = const Color(0xFFD8DDFF);
+  final Color purpleColor = const Color(0xFF4C43CE);
+  final Color purpleColorDark = const Color(0xFF271BC1);
+  final Color yellowColor = const Color(0xFFFFC918);
 
   @override
   Widget build(BuildContext context) => MaterialApp(
@@ -56,20 +87,9 @@ class EmblaApp extends StatelessWidget {
     ),
     home: InitPage(),
     theme: new ThemeData(
-      primarySwatch: MaterialColor(0xFFFFFFFF, const <int, Color> {
-        50:  const Color(0xFFFFFFFF),
-        100: const Color(0xFFFFFFFF),
-        200: const Color(0xFFFFFFFF),
-        300: const Color(0xFFFFFFFF),
-        400: const Color(0xFFFFFFFF),
-        500: const Color(0xFFFFFFFF),
-        600: const Color(0xFFFFFFFF),
-        700: const Color(0xFFFFFFFF),
-        800: const Color(0xFFFFFFFF),
-        900: const Color(0xFFFFFFFF),
-      }),
+      primarySwatch: purple,
       brightness: Brightness.light,
-      accentColor: blue,
+      accentColor: yellow,
       textTheme: TextTheme(
         title: textBase.copyWith(
             fontSize: 45.0,
@@ -91,12 +111,13 @@ class EmblaApp extends StatelessWidget {
             fontWeight: FontWeight.bold
         ),
       ),
-      primaryColorBrightness: Brightness.dark,
-      primaryColor: const Color(/*0xFF6CEA9B*/0xFF0984E3),
-      primaryColorDark: const Color(/*0xFF36754E*/0xFF0584A3),
-      textSelectionColor: const Color(/*0xFF6CEA9B*/0xFF0984E3),
-      textSelectionHandleColor: const Color(0xFF51B074),
-      highlightColor: const Color(0x8CC4F7D7),
+      primaryColorBrightness: Brightness.light,
+      primaryColor: purpleColor,
+      primaryColorLight: purpleColorLight,
+      primaryColorDark: purpleColorDark,
+      textSelectionColor: purpleColorLight,
+      textSelectionHandleColor: purpleColorLight,
+      highlightColor: purpleColorLight,
       buttonTheme: ButtonThemeData(
         shape: RoundedRectangleBorder(
           borderRadius: const BorderRadius.all(const Radius.circular(8.0)),

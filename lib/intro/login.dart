@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:embla/util/auth.dart';
+import 'package:embla/app_state.dart';
 
 class LoginPage extends StatefulWidget {
 
@@ -37,12 +38,19 @@ class LoginPageState extends State<LoginPage> {
                     onPressed: isComplete
                         ? null
                         : () {
-                            initialSignIn().then((z) {
+                            if(AppState.isDesktop) {
                               setState(() {
                                 isComplete = true;
                               });
                               widget.loginComplete();
-                            });
+                            } else {
+                              initialSignIn().then((z) {
+                                setState(() {
+                                  isComplete = true;
+                                });
+                                widget.loginComplete();
+                              });
+                            }
                           },
                     elevation: 10.0,
                     highlightElevation: 16.0,

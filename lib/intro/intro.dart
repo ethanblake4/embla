@@ -66,7 +66,7 @@ class _IntroState extends State<Intro> {
           ),
           Padding(
               padding: EdgeInsets.only(left: 50.0, right: 50.0),
-              child: SizedBox(width: 60.0, height: 4.0, child: Material(color: Theme.of(context).primaryColor))),
+              child: SizedBox(width: 60.0, height: 4.0, child: Material(color: Theme.of(context).accentColor))),
           Expanded(
               child: PageView.builder(
             physics: AlwaysScrollableScrollPhysics(),
@@ -90,7 +90,7 @@ class _IntroState extends State<Intro> {
             child: new Padding(
               padding: const EdgeInsets.all(8.0),
               child: new DotsIndicator(
-                color: /*Theme.of(context).brightness == Brightness.light ? Colors.black : */Theme.of(context).accentColor,
+                color: /*Theme.of(context).brightness == Brightness.light ? Colors.black : */Theme.of(context).primaryColor,
                 controller: _controller,
                 itemCount: 4,
                 onPageSelected: (int page) {

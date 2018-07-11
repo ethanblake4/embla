@@ -29,7 +29,7 @@ class _HomeMainPageState extends State<HomeMainPage> {
             child: Container(
                 width: 20.0,
                 height: 4.0,
-                color: Theme.of(context).primaryColor,
+                color: Theme.of(context).accentColor,
                 constraints: BoxConstraints.tightFor(width: 25.0, height: 4.0))),
         Padding(
             padding: EdgeInsets.symmetric(horizontal: 25.0, vertical: 10.0),
@@ -39,9 +39,11 @@ class _HomeMainPageState extends State<HomeMainPage> {
                     padding: EdgeInsets.symmetric(vertical: 15.0),
                 elevation: 6.0,
                 child: Text('Start a new project'),
-                color: Theme.of(context).accentColor,
+                color: Theme.of(context).primaryColorDark,
                 colorBrightness: Brightness.dark,
-                onPressed: () {},
+                onPressed: () {
+                      Navigator.of(context).pushNamed('/newcustom');
+                },
               ))
             ])),
         Padding(

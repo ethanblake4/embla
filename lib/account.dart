@@ -56,7 +56,7 @@ class _AccountPageState extends State<AccountPage> {
                   child: Container(
                       width: 20.0,
                       height: 4.0,
-                      color: Theme.of(context).primaryColor,
+                      color: Theme.of(context).accentColor,
                       constraints: BoxConstraints.tightFor(width: 25.0, height: 4.0))),
               Center(child: Icon(Icons.person)),
               Center(child: Text(AppState().currentUser.displayName, style: Theme.of(context).textTheme.display1)),
@@ -122,7 +122,7 @@ class _AccountPageState extends State<AccountPage> {
             onTap: () {
               Navigator
                   .of(context)
-                  .push(new MaterialPageRoute(builder: (ctx) => CommunityItemPage(image: it['image'])));
+                  .push(new MaterialPageRoute(builder: (ctx) => CommunityItemPage(item: it)));
             },
           ));
     });

@@ -7,6 +7,8 @@ class AppState {
   static final AppState _appstate = new AppState._internal();
   static const String appFont = 'Renner';
 
+  static const bool isDesktop = true;
+
   static final bool isDark = true;
 
   FirebaseStorage storage;

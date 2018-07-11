@@ -21,7 +21,7 @@ class _OrdersPageState extends State<OrdersPage> {
             child: Container(
                 width: 20.0,
                 height: 4.0,
-                color: Theme.of(context).primaryColor,
+                color: Theme.of(context).accentColor,
                 constraints: BoxConstraints.tightFor(width: 25.0, height: 4.0))),
         Padding(
             padding: EdgeInsets.symmetric(horizontal: 25.0),
